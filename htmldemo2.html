@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <script type="text/javascript">
+        //document.write("hello from js");
+
+        function writedata(){
+            //selecting text box and reteriving current value
+          var data=  document.getElementById("txt1").value;
+          //alert(data);  //shows pop up on screen
+
+          //alert(document.getElementById("div1").innerHTML);
+          document.getElementById("div1").innerHTML=data;//will write data in div section
+        }
+        var interval=0;
+        function changeProgress(){
+
+            var pvalue=document.getElementById("p1").value+1;
+            document.getElementById("p1").value=pvalue;
+            document.getElementById("div1").innerHTML=pvalue+"% completed";
+
+            if(pvalue==100)
+            {
+                //task to be performed
+                clearInterval(interval);
+                window.location="http://www.google.co.in";
+
+            }
+        }
+            window.onload=function(){
+            interval=setInterval("changeProgress()",200);
+
+        };
+
+    </script>
+
+</head>
+<body>
+    <h2 align="center">Working with HTML 5 tags</h2>
+    <hr>
+    <h3>Meter Tag</h3>
+    Maths:<meter min="0" max="10" value="5"></meter><br><br>
+    eng:<meter min="0" max="10" value="7"></meter><br><br>
+    phy:<meter min="0" max="10" value="9"></meter><br><br>
+    hin:<meter min="0" max="10" value="8"></meter><br><br>
+
+    <h3>Progress Tag</h3>
+    <Progress max="100" value="0" id="p1" ></Progress><br><br>
+    <input type="text" id="txt1" placeholder="enter some data"/><br><br>
+    <input type="button" value="Write in div" onclick="WriteData()"><br><br>
+    <div id="div1">
+        content goes here
+    </div>
+   <!--
+       <script type="text/javascript">
+        document.write("hello from js");
+
+    </script>*/
+-->
+</body>
+</html>

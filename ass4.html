@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No-4</title>
+    <style >
+        body{
+            background-color: rgb(238, 238, 90);
+
+        }
+        .footer{
+            position: absolute;
+            bottom: 60px;
+            height: 60px;
+            text-align: center;
+            border-radius: 15px;
+            font-size: large;
+            width: 100%;
+            color: rgb(225, 84, 84);
+            }
+        h2{
+               color:rgb(192, 95, 95);
+               text-align: center;
+               text-transform: capitalize;
+               background-color: rgb(188, 201, 232);
+               height: 140px;
+           }
+       ul{
+            background-color: black;
+            list-style: none;
+            border-radius: 10px;
+            height: 40px;
+        
+       }
+       /*child selector*/
+       ul>li{
+           
+            display: inline-block;
+            width: 16%;            
+            padding-top:.7%;
+       }
+       /*descendant selector*/
+       ul a{
+           text-decoration: none;
+           color:white;
+           font-weight: bold;
+       }
+       ul a:hover{
+           text-transform: uppercase;
+           color:red;
+           }
+        div{
+            background-color: rgb(177, 194, 91);
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        .container{
+            background-color:yellow;
+            /* the element will be ppositioned relative its normal position*/
+            position: relative;
+            /* the element will be positioned reative its browser window/certiport
+            position: fixed; */
+            top: 50px;
+            height: 60px;
+            text-align: center;
+            border-radius: 10px;
+            font-size:xx-large;
+        }
+        .content{
+            background-color:palegreen;
+            /*the element will be positioned relative its normal position*/
+            position:absolute;
+             /*the element will be positioned relative its browser windows/certiport
+            position: fixed;*/
+            top: 130px;
+            left:360px;
+            height: 60px;
+            text-align: center;
+            border-radius: 10px;
+            font-size:xx-large;
+            width: 65%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h2 > 
+        <pre>
+        <input type="image" align="left" src="../images/ut.jpg" height="20%" width="10%" size="50px" >      
+       <b> University Of Mumbai</b>
+        <pre>
+            <div class="div">
+                A joint Project by Goverment of Maharashtra & Education Ministry  
+            </div>
+        </pre>       
+    </h2>
+    <marquee direction="Right" bgcolour="red" 
+    behavior="alternate"  onmouseover="stop()" onmouseleave="start()"><br>
+        Addmition in progress... <a href="#">Goto Mainpage</a><br>
+        Addmition in progress... <a href="#">Goto Mainpage</a><br>
+    </marquee>
+    <hr/>
+    <ul >
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./html5demo.html" target="myframe">Department</a></li>
+        <li><a href="./HTML5FORM.html" target="myframe">Faculty</a></li>
+        <li><a href="./HTML5FORM2.html" target="myframe">Courses</a></li>
+        <li><a href="./htmldemo2.html" target="myframe">Administration</a></li>
+        <li><a href="./HTML5Media.html" target="myframe"></a>Training</li>
+     </ul>
+     <hr>
+     <img src="../images/pexels-pixabay-207692.jpg" height="60%" width="100%">
+     <hr>
+     <form>
+        <input type="text" name="t1" placeholder="enter your name"/><br><br>
+        <input type="email"  name="t2" placeholder="enter your email"/><br><br>
+        <input type="password"  name="t3" placeholder="*******"/><br><br>
+        <select name="t4">
+            <option>--- Select city --</option>
+                <option value="1">Mumbai</option>
+                <option value="2">Pune</option>
+                <option value="3">Nagpur</option>
+        </select><br><br>
+        <textarea class="textarea" name="t5"></textarea>
+        <input type="submit" color="red" value="Register Me"/>
+       </form>
+    <div >
+        <div align="center">
+            Copyright reserved@2017 
+        </div>
+          </div>    
+</body>
+</html>

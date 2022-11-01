@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!----linking Bootstrap  css-->
+     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+     <script src="../bootstrap/js/jquery-3.1.1.min.js"></script>
+     <script src="../bootstrap/js/popper.min.js"></script>
+     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    
+     <script>
+         $(document).ready(function(){
+            $("#b1").click(function(){
+
+                $("#warning").addClass("show");
+            });
+         });
+     </script>
+
+    </head>
+<body>
+    <h2>Boostrap button</h2>
+    <div class="container p-2" style="background-color:rgb(46, 181, 152);">
+    <input type="button" value="Primary" class="btn btn-primary"/>
+    <input type="button" value="Danger" class="btn btn-danger"/>
+    <input type="button" value="Info" class="btn btn-info"/>
+    <!--btn-block makes button to  100% width of its parent-->
+    <input type="button" value="Warning" class="btn btn-warning btn-block"/>
+    <input type="button" value="Secondary" class="btn btn-secondary"/>
+    <input type="button" value="Success" class="btn btn-success disabled"/>
+    <input type="button" value="light" class="btn btn-ligh"/>
+    <input type="button" value="link" class="btn btn-link"/>
+    <input type="button" value="Dark" class="btn btn-dark"/>
+
+    <br><br>
+    <h3>spinner Button</h3>
+    <button type="button" class="btn btn-primary">
+        <span class="spinner-border spinner-border-md"></span>
+        <!--loading-->
+    </button>
+    <button type="button" class="btn btn-danger">
+        <span class="spinner-grow spinner-border-md"></span>
+       <!--Deleting--> 
+    </button>
+    <br>
+
+    <h3>Bootstrap Dropdown</h3>
+    <div class="btn-group dropdown">
+        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+           Services  <!--<span class="caret"></span>-->
+        </a> 
+        <ul class="dropdown-menu">
+            <li class="dropdown-divider"></li>
+            <li><a href="#">Software</a> </li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#">Hardware</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#">Delivery</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#">Training</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#">Networking</a></li>
+            
+        </ul>
+    </div>
+
+    <h2>Button Group</h2>
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary">Home</a>
+        <a href="#"  class="btn btn-primary">About-us</a>
+        <a href="#"  class="btn btn-primary">Contact-us</a>
+        
+        <!--DropDown starts-->
+        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Services  <!--<span class="caret"></span>-->
+         </a> 
+         <ul class="dropdown-menu">
+             <li class="dropdown-divider"></li>
+             <li><a href="#">Software</a> </li>
+             <li class="dropdown-divider"></li>
+             <li><a href="#">Hardware</a></li>
+             <li class="dropdown-divider"></li>
+             <li><a href="#">Delivery</a></li>
+             <li class="dropdown-divider"></li>
+             <li><a href="#">Training</a></li>
+             <li class="dropdown-divider"></li>
+             <li><a href="#">Networking</a></li>
+             
+         </ul><!--Dropdown ends here-->
+         <a href="#"  class="btn btn-primary">FAQ</a>
+
+    </div>
+
+    </div>
+
+
+    <h2>Bootstrap jumbotron</h2>
+    <div class="container p-1 bg-warning">
+        <div class="jumbotron p-2 " style="background-color: rgb(194, 40, 66) ;">
+            <h4>Bootstrap alerts</h4>
+            <div class="alert alert-success alert-dismissible fade show">
+                <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                <strong>Success!</strong> Indicates a successful action.
+            </div>
+            <div class="alert alert-primary alert-dismissible fade show">
+                <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                <strong>Primary!</strong> Indicates a successful action.
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                <strong>Danger!</strong> Indicates a successful action.
+            </div>
+            <div id="warning" class="alert alert-warning alert-dismissible fade hide">
+                <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                <strong>Warning!</strong> Indicates a successful action.
+            </div>
+            <button type="button" id="b1" class="btn btn-warning" >Show warning alert</button>
+                
+        </div>
+    </div>
+
+
+
+    <h2>Bootstrap table</h2>
+    <div class="container bg-success p-1">
+       <!--<img src="../images/gun.jpg" alt="image" class="rounded-circle">-->
+       <!--<img src="../images/gun.jpg" alt="image" class="rounded">--->
+
+       <img src="../images/gun.jpg" alt="image" class="img-thumbnail img-fluid rounded-circle mx-auto d-block">
+
+    </div>
+
+    <div class="container bg-danger">
+        <table class="table table-bordered p-1 table-dark table-hover table-striped">
+            <tr class="table-success"><td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td></tr>
+            <tr><td>101</td><td>Nilesh</td><td>IT</td><td>London</td></tr>
+            <tr><td>102</td><td>Vikas</td><td>IT</td><td>London</td></tr>
+            <tr><td>103</td><td>roit</td><td>IT</td><td>London</td></tr>
+            <tr><td>104</td><td>Nilesh</td><td>IT</td><td>London</td></tr>
+            <tr><td>105</td><td>Nilesh</td><td>IT</td><td>London</td></tr>
+            <tr><td class="table-condensed">106</td><td>Nilesh</td><td>IT</td><td>London</td></tr>
+            <tr><td>107</td><td>Nilesh</td><td>IT</td><td>London</td></tr>
+            <tr><td class="table-danger">108</td><td>Nilesh</td><td>Comp</td><td>London</td></tr>
+        </table>
+    </div>
+
+    <h2>Bootstrap Responsive Table:</h2>
+    <div class="container bg-danger table-responsive">
+        <table class="table table-bordered p-1 table-dark table-hover table-striped">
+            <tr class="table-success">
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+                <td>ID</td><td>Name</td><td>Dapartment</td><td>Location</td>
+            </tr>
+            <tr>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+                <td>101</td><td>Nilesh</td><td>IT</td><td>London</td>
+               
+            </tr>    
+        </table>
+    </div>
+   
+</body>
+</html>

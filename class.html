@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!---Linking bootstrap css-->
+     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+     <!---Linking jQuery and bootstrap js files-->
+     <script src="../bootstrap/js/jquery-3.1.1.min.js" ></script>
+     <script src="../bootstrap/js/bootstrap.min.js" ></script>
+     <script>
+
+           $(document).ready(function(){
+
+               $("#b1").click(function(){
+
+                      $("#warning").addClass("show");
+               });
+           });
+
+     </script>
+    
+
+</head>
+<body>
+    <h2>Bootstarp Jumbotron</h2>
+    <div class="container p-1 bg-secondary">
+           <div class="jumbotron" style="background-color: pink;">                 
+                 <h4>Bootstarp Alerts: </h4>
+                <div class="alert alert-success alert-dismissible fade show">
+                <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                <strong>Success!</strong>Indicates a successful action.
+                </div>
+                <div class="alert alert-primary alert-dismissible fade show">
+                    <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                    <strong>Primary!</strong>Indicates a Primary action.
+                </div>  
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                    <strong>Danger!</strong>Indicates a Danger action.
+                </div> 
+                <div id="warning"  class="alert alert-warning alert-dismissible fade hide">
+                    <a href="#" class="close" data-dismiss="alert" >&times;</a>
+                    <strong>Warning!</strong>Indicates a Warning action.
+                </div> 
+                <button type="button" id="b1" class="btn btn-warning">Show Warning Alert</button>
+
+           </div>
+    </div>
+
+
+   <h2>Bootstarp Image</h2>
+   <div class="container bg-success p-1">
+      <!-- <img src="../images/back.jpg" alt="image" class="rounded">-->
+
+      <!-- <img src="../images/back.jpg" alt="image" class="rounded-circle">-->
+
+      <img src="../images/back.jpg" alt="image" class="img-thumbnail img-fluid rounded-circle mx-auto d-block">
+      
+
+   </div>
+
+
+
+    <h2>Bootstarp Table:</h2>
+    <div class="container bg-danger p-1">
+          <table class="table table-bordered table-dark table-hover table-striped">
+              <tr class="table-success"><td>ID</td><td>Name</td><td>Department</td><td>Location</td></tr>
+              <tr><td>101</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>102</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>103</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>104</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>105</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>106</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td>107</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+              <tr><td class="table-danger">108</td><td>Sonal</td><td>IT</td><td>Noida</td></tr>
+          </table>
+    </div>
+    
+    <h2>Bootstarp Reponsive Table:</h2>
+    <div class="container bg-primary p-1 table-responsive">
+          <table class="table table-bordered table-dark table-hover table-striped">
+              <tr class="table-success">
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+                  <td>ID</td><td>Name</td><td>Department</td><td>Location</td>
+            </tr>
+              <tr>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                  <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+              </tr>
+              <tr>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+                <td>101</td><td>Sonal</td><td>IT</td><td>Noida</td>
+            </tr>              
+              
+          </table>
+    </div> 
+</body>
+</html>

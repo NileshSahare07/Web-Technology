@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+    <script src="../bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../bootstrap/js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <h2 class="text-center">Bootstrap from validation </h2>
+    <hr>
+    <div class="container">
+        <div class="jumbotron p-2" style="background-color:pink;">
+           <!-- form start here -->
+           <!-- before form submission -->
+            <!-- <form class="was-validated"> -->
+
+                 <!-- after form submission -->
+                <form class="needs-validation" novalidate>
+                <div class="form-row p-1">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="txtName" name="txtname" placeholder="enter Fullname here" required>
+                   <!-- Displaying custom validation messages -->
+                <div class="valid-feedback">Valid</div>   
+                <div class="invalid-feedback">Please input your fullname</div>
+                </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="enter email here" required>
+                    </div>
+                </div>
+                <div class="form-row p-1">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="txtMobile" name="txtmobile" placeholder="enter Mobile no  here" required>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="city" name="city" class="form-control" required>
+                            <!-- 1st option(select) empty for required -->
+                            <option>---select--</option>  
+                            <option value="1">Noida</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Mumbai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row p-1">
+                    <div class="col-md">
+                        <label class="form-check-inline">
+                            <input type="checkbox"/>I accepy terms & conditions
+                            <input type="submit" class="btn btn-primary ml-1" value="Register Me">
+                        </label>
+                    </div>
+                </div>
+            </form>
+           <!-- form end here -->
+        </div>
+    </div>
+    <script>
+        (function() { 
+          window.addEventListener('load', function() {
+         var forms = document.getElementsByClassName('needs-validation'); 
+
+ //filter() calls a provided callback function once for each element in an array, and 
+// constructs a new array of all the values for which callback returns a value that coerces 
+// to true. 
+
+           var validation = Array.prototype.filter.call(forms, function(form) {
+           form.addEventListener('submit', function(e) {
+            if (form.checkValidity() === false) {
+             e.preventDefault();
+             e.stopPropagation();
+             }
+            form.classList.add('was-validated');
+              }, false);
+                });
+                 }, false); 
+                     } )();
+       </script>
+    
+</body>
+</html>

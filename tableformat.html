@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table with css--</title>
+    <style type="text/css">
+         h2{
+        text-align:center;
+        color: green;
+        text-transform: uppercase;
+    }
+    .table{
+        width: 70%;
+        margin: auto;
+        border:  2px solid lightgreen;
+        border-collapse: collapse;
+    }
+    .table th,td{
+        border: 2px solid lightcoral;
+        text-align: left;
+        padding: 2px;
+        width: 25%;
+        font-weight: bold;
+    }
+    .table tr:nth-child(even){
+        background-color: olivedrab;
+        color: white;
+
+    }
+    .table tr:nth-child(odd){
+        background-color: greenyellow ;
+        color:whitesmoke;
+
+    }
+    .table tr:hover{
+        background-color: aqua;
+        color: lightblue;
+    }
+    .table tr:first-child{
+        background-color:black;
+        color: blueviolet;
+    }
+    .table tr:last-child{
+        background-color:black;
+        color: blueviolet;
+    }
+
+    </style>
+   
+</head>
+<body>
+    <h2>HTML table formating with css--</h2>
+    <hr>
+   <table class="table">
+     <tr>
+   <th>Roll No</th><th>Name </th> <th>Course</th><th>mark percentage</th>  
+   <tr>
+     <th>1001</th><th>Sumit </th> <th>PGDAC</th><th>70</th>  
+     </tr>
+    <tr><th>1002</th><th>Rohan </th> <th>PGDAC</th><th>80</th></tr>
+      
+<tr><th>1003</th><th>Nilesh</th> <th>PGDAC</th><th>60</th></tr>
+<tr><th>1004</th><th>Namdev</th> <th>PGDAC</th><th>75</th></tr>
+<tr><th>1005</th><th>dipak</th> <th>PGDAC</th><th>65</th></tr>
+<tr><th>1006</th><th>Nitesh</th> <th>PGDAC</th><th>85</th></tr>
+<tr><th>1007</th><th>vitesh</th> <th>PGDAC</th><th>65</th></tr>
+
+
+      <tr>
+          <td colspan="4"> This is footer row</td>
+      </tr>
+   </table>
+</body>
+</html>
